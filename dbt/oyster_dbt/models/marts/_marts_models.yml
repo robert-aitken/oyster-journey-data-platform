@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: mart_oyster_journey_summary
+    columns:
+      - name: journey_date
+      - name: journey_action
+        tests:
+          - not_null
+  - name: mart_oyster_daily_spend
+    columns:
+      - name: journey_day
+        tests:
+          - not_null

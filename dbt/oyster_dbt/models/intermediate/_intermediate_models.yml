@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: int_oyster_journey_events
+    columns:
+      - name: journey_action
+        tests:
+          - not_null
+  - name: int_oyster_daily_spend
+    columns:
+      - name: journey_day
+        tests:
+          - not_null

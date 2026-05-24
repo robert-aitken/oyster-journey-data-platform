@@ -1,0 +1,7 @@
+oyster_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: ../../database/duckdb/oyster.duckdb
+      schema: main

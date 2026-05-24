@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: raw
+    database: oyster
+    schema: raw
+    tables:
+      - name: oyster_journey_history
+        columns:
+          - name: journey_date
+          - name: start_time
+          - name: end_time
+          - name: journey_action
+          - name: charge
+          - name: credit
+          - name: balance
+          - name: note
+          - name: source_file
+          - name: import_datetime

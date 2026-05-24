@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: stg_oyster_journey_history
+    columns:
+      - name: journey_date
+      - name: journey_action
+        tests:
+          - not_null
