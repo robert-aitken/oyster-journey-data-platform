@@ -1,0 +1,12 @@
+project:
+  name: oyster_journey_data_platform
+  mode: sample
+
+paths:
+  import_path: data/sample/oyster_journey
+  database_path: database/duckdb/oyster.duckdb
+
+duckdb:
+  database_name: oyster
+  raw_schema: raw
+  raw_table: oyster_journey_history

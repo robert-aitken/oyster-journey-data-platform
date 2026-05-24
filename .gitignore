@@ -19,3 +19,4 @@ dbt/oyster_dbt/profiles/.user.yml
 logs/
 
 .ipynb_checkpoints/
+config/*.local.yml
