@@ -1,0 +1,21 @@
+Date,Start Time,End Time,Journey/Action,Charge,Credit,Balance,Note
+21-Nov-2025,07:32,07:50,Green Park [London Underground] to Victoria [London Underground],2.40,,27.60,
+21-Nov-2025,08:02,08:18,Victoria [London Underground] to Baker Street [London Underground],2.50,,25.10,
+21-Nov-2025,17:47,18:05,Baker Street [London Underground] to Liverpool Street [London Underground],0.00,,25.10,Daily cap applied
+21-Nov-2025,18:23,,"Bus journey, route 73",1.75,,23.35,
+22-Nov-2025,09:12,09:30,Liverpool Street [London Underground] to Stratford [London Underground],2.70,,20.65,
+22-Nov-2025,10:05,,Fare refund,,2.40,23.05,Fare refund
+22-Nov-2025,18:14,18:31,Stratford [London Underground] to Canary Wharf [London Underground],2.60,,20.45,
+22-Nov-2025,23:41,,"Bus journey, route N63",1.75,,18.70,
+24-Nov-2025,07:48,08:07,Canary Wharf [London Underground] to London Bridge [London Underground],2.60,,16.10,
+24-Nov-2025,08:21,,Auto top-up,,20.00,36.10,Auto top-up
+24-Nov-2025,12:12,12:31,London Bridge [London Underground] to Waterloo [London Underground],2.50,,33.60,
+24-Nov-2025,12:49,,"Bus journey, route 168",1.55,,32.05,
+26-Nov-2025,07:56,08:14,Waterloo [London Underground] to Holborn [London Underground],2.50,,29.55,
+26-Nov-2025,08:28,08:42,Holborn [London Underground] to Tottenham Court Road [London Underground],0.00,,29.55,Journey continuation
+26-Nov-2025,17:22,17:40,Tottenham Court Road [London Underground] to King's Cross St. Pancras [London Underground],2.60,,26.95,
+26-Nov-2025,17:59,18:14,King's Cross St. Pancras [London Underground] to Euston [London Underground],2.40,,24.55,
+27-Nov-2025,08:06,,Fare adjustment,,1.10,25.65,Fare adjustment
+27-Nov-2025,09:02,,"Bus journey, route 343",1.55,,24.10,
+27-Nov-2025,18:39,18:58,Euston [London Underground] to South Kensington [London Underground],2.80,,21.30,
+27-Nov-2025,19:28,19:46,South Kensington [London Underground] to Victoria [London Underground],2.40,,18.90,
