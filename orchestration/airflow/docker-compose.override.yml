@@ -1,0 +1,16 @@
+services:
+  api-server:
+    volumes:
+      - ../..:/usr/local/airflow/oyster_project
+
+  scheduler:
+    volumes:
+      - ../..:/usr/local/airflow/oyster_project
+
+  dag-processor:
+    volumes:
+      - ../..:/usr/local/airflow/oyster_project
+
+  triggerer:
+    volumes:
+      - ../..:/usr/local/airflow/oyster_project
