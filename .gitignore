@@ -1,3 +1,4 @@
+.venv-airflow-ide/
 .venv/
 .env
 **/.env
