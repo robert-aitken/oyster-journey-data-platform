@@ -1,6 +1,7 @@
 from pathlib import Path
 
 from airflow.providers.standard.operators.empty import EmptyOperator
+from airflow.providers.standard.operators.bash import BashOperator
 from airflow.sdk import dag, task
 from pendulum import datetime
 
@@ -49,9 +50,25 @@ def oyster_journey_pipeline():
 
         print("All required Oyster paths were found.")
 
+    check_required_paths_task = check_required_paths()
+
+    load_raw_oyster_journey_history_task = BashOperator(
+        task_id="load_raw_oyster_journey_history_duckdb",
+        bash_command=(
+            "cd /usr/local/airflow/oyster_project && "
+            "python python/ingestion/scripts/load_raw_oyster_journey_history_duckdb.py "
+            "--config-path config/oyster_project.local.yml"
+        ),
+    )
+
     end_task = EmptyOperator(task_id="end")
 
-    start_task >> check_required_paths() >> end_task
+    (
+        start_task
+        >> check_required_paths_task
+        >> load_raw_oyster_journey_history_task
+        >> end_task
+    )
 
 
 oyster_journey_pipeline()
