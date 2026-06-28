@@ -61,12 +61,21 @@ def oyster_journey_pipeline():
         ),
     )
 
+    run_oyster_journey_dbt_build_task = BashOperator(
+        task_id="run_oyster_journey_dbt_build",
+        bash_command=(
+            "cd /usr/local/airflow/oyster_project/dbt/oyster_dbt && "
+            "dbt build --profiles-dir profiles --select tag:OYSTER_JOURNEY"
+        ),
+    )
+
     end_task = EmptyOperator(task_id="end")
 
     (
         start_task
         >> check_required_paths_task
         >> load_raw_oyster_journey_history_task
+        >> run_oyster_journey_dbt_build_task
         >> end_task
     )
 
